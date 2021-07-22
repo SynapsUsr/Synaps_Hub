@@ -1,0 +1,19 @@
+local ShlexLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexsoftworks/ui/main/source"))()
+local Window = ShlexLib:Window("Synaps Hub: Shlex Edition","Version 1.0.0 (Dev)","25%","50%","75%","100%")
+local Player = game.Players.LocalPlayer
+local Names = Player.Name
+
+--Welcome Tab
+local Tab = Window:Tab("Welcome!",7135169821)
+Tab:Label("Developed Using Shlex Library!")
+Tab:Paragraph("Welcome " .. Names .. "!","Hello, I'm the developer of Universal Exploit and Synaps_Hub. You shall know me as 'SynapsUsr' or 'Scriptz'! I will keep adding scripts as time goes on!")
+
+--Scripts Tab
+local Tab = Window:Tab("Scripts Page 1",7135169601)
+Tab:Button("Universal Exploit", function()
+    ShlexLib:Notify("Synaps Hub: Shex Edition:","Loading Universal Exploit!",0000)
+    wait(3)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SynapsUsr/UniExploit-V1/main/Universal%20Exploit%20Ver%201", true))()
+end)
+
+ShlexLib:Notify("Synaps Hub: Shex Edition:","Loaded Hub Successfully!",0000)
